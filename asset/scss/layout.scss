@@ -1,0 +1,185 @@
+//layout 공통
+#wrap {
+  width: $siteWidth;
+  margin: 0 auto;
+  #header {
+    position: relative;
+    height: 80px;
+    z-index: 500;
+    #top_logo {
+      float: left;
+      height: 80px;
+      a {
+        height: 80px;
+        line-height: 100px;
+      }
+    }
+    //top_menu 구현
+    #top_nav {
+      position: relative;
+      height: 80px;
+      float: right;
+      ul {
+        float: left;
+        li {
+          position: relative;
+          float: left;
+          margin-left: 30px;
+          &:first-child {
+            margin-left: 0;
+          }
+          a {
+            line-height: 80px;
+            height: 80px;
+            font-weight: bold;
+          }
+          &:hover {
+            .submenu {
+              visibility: visible;
+              opacity: 1;
+              top: 100%;
+            }
+          }
+          //submenu 구현
+          .submenu {
+            position: absolute;
+            border: 1px solid $borderColorPrimary;
+            visibility: hidden;
+            top: calc(100% - 3px);
+            left: 0;
+            opacity: 0;
+            transition: 0.5s;
+            li {
+              width: 100%;
+              margin: 0;
+              background: white;
+              box-sizing: border-box;
+              padding: 0 10px;
+              min-width: 150px;
+              transition: 0.5s;
+              a {
+                line-height: 40px;
+                height: 40px;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+              }
+              &:hover {
+                background: $gbtnColor;
+                a {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //하단영역
+  #footer {
+    color: $fontColorPrimary;
+    font-size: 14px;
+    .footer_top {
+      padding: 60px 0 30px;
+    }
+    /* footer container 공통 스타일 */
+    & > .container {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: $siteWidth;
+      .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        /* footer logo */
+        .footer_logo {
+          &.column {
+            flex: 160px;
+            flex-grow: 0;
+            flex-shrink: 0;
+          }
+          img{
+            width: 120px;
+          }
+        }
+
+        .column {
+          flex: 25%;
+          box-sizing: border-box;
+          padding: 0 10px;
+          margin-bottom: 30px;
+          h4 {
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            color: $fontColorPrimary;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            /*h4의 :before, :after 공통 스타일*/
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 3px;
+            }
+
+            &:before {
+              right: 0;
+              background: $gbtnColor;
+            }
+
+            &:after {
+              width: 60px;
+              background: #999;
+            }
+          } //h4 end
+
+          /*list style*/
+          ul {
+            li {
+              border-bottom: 1px solid $gbtnColor;
+              padding: 10px 0;
+              &:nth-child(1) {
+                padding-top: 0;
+              }
+            }
+          }
+
+          p {
+            line-height: 26px;
+          }
+
+          &.news {
+            input {
+              float: left;
+              &[type="search"] {
+                box-sizing: border-box;
+                border: 1px solid $gbtnColor;
+                padding: 6px 8px;
+                width: 65%;
+              }
+              &[type="submit"] {
+                box-sizing: border-box;
+                background: $gbtnColor;
+                border: 0;
+                width: 35%;
+                padding: 7px 0;
+                text-align: center;
+                color: #ffffff;
+              }
+            }
+          } //.news end
+        } //.column end
+      } //.row end
+    } //.container
+  } //#footer end
+}

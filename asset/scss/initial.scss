@@ -1,0 +1,29 @@
+/*initial css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html,body{
+  height: 100%;
+}
+
+body{
+  background: $layoutBg;
+  color: $fontColorBasic;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html,body,ul,li,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $fontColorPrimary;
+  transition: .5s;
+  &:hover{
+    color: $fontColorHover;
+  }
+}
