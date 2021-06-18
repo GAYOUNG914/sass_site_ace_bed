@@ -1,10 +1,10 @@
 //component
 .history_content{flex: 100%;}
 .inner{
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   &:first-child{
     .box{
-      margin-top: 150px;
+      margin-top: 100px;
     }
   }
   .box{
@@ -257,13 +257,20 @@
         padding: 10px 13px;
         box-sizing: border-box;
         margin: 0;
+        overflow: hidden;
         .product_column_hover{
           display: block;
           &:hover{
             transition: .3s;
             transform: scale(1.02);
           }
+          img{
+            transform: scale(1.06);
+          }
         }
+      }
+      .sns{
+        padding: 0;
       }
 
       .column4{

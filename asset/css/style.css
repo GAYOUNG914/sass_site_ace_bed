@@ -35,11 +35,11 @@ a:hover {
 }
 
 .inner {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .inner:first-child .box {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .inner .box {
@@ -320,6 +320,7 @@ a:hover {
   padding: 10px 13px;
   box-sizing: border-box;
   margin: 0;
+  overflow: hidden;
 }
 
 .inner .box .items_column .product_column .product_column_hover {
@@ -329,6 +330,14 @@ a:hover {
 .inner .box .items_column .product_column .product_column_hover:hover {
   transition: .3s;
   transform: scale(1.02);
+}
+
+.inner .box .items_column .product_column .product_column_hover img {
+  transform: scale(1.06);
+}
+
+.inner .box .items_column .sns {
+  padding: 0;
 }
 
 .inner .box .items_column .column4 {
@@ -870,7 +879,6 @@ tr:hover {
 
 .mainbanner {
   height: 550px;
-  background: url("../img/main_banner.jpg") no-repeat;
   background-size: cover;
 }
 

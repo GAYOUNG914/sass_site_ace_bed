@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>sass site add footer style</title>
   <meta name="description" content="sass site add footer style">
+  <link rel="stylesheet" href="./asset/css/swiper-bundle.css">
+  <link rel="stylesheet" href="./asset/css/swiper_customize.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/common.js"></script>
@@ -64,7 +66,19 @@
    </header>
    <main>
      <!-- 메인배너 영역-->
-     <div class="mainbanner"></div>
+     <div class="mainbanner">
+       <div class="box swiper swiper2">
+         <div class="swiper-container mySwiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="./asset/img/main_banner.jpg"></div>
+             <div class="swiper-slide"><img src="./asset/img/main_banner2.jpg"></div>
+             <div class="swiper-slide"><img src="./asset/img/main_banner3.jpg"></div>
+           </div>
+           <div class="swiper-button-next"></div>
+           <div class="swiper-button-prev"></div>
+         </div>
+       </div>
+     </div>
      <!-- 컨텐츠 영역 -->
      <div class="container">
        <div class="content">
@@ -188,5 +202,20 @@
      </div>
    </footer>
  </div>
+ <script type="text/javascript" src="./js/swiper-bundle.js"></script>
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 30,
+     centeredSlides: true,
+     autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
 </body>
 </html>
