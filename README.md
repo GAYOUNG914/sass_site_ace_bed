@@ -1,6 +1,7 @@
 # 에이스침대
 SCSS 사용을 위해 만든 사이트입니다.<br>
 에이스침대 컨텐츠만을 가져온 리뉴얼 사이트입니다.
+카카오 맵 API를 사용해보았습니다.
 
 ## Link
 * https://gayoung914.github.io/sass_site_ace_bed/
@@ -17,6 +18,7 @@ SCSS 사용을 위해 만든 사이트입니다.<br>
 * SCSS
 * Jquery
 * swiper Plugin
+* Kakao map API
 
 ## Skill
 * Main Contents Interaction in Gallery<br>
