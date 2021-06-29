@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="./asset/css/swiper-bundle.css">
   <link rel="stylesheet" href="./asset/css/swiper_customize.css">
   <link rel="stylesheet" href="./asset/css/style.css">
-  <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/common.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/common.js"></script>
   <!--[if lt IE 9]>
   <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -70,9 +70,9 @@
        <div class="box swiper swiper2">
          <div class="swiper-container mySwiper">
            <div class="swiper-wrapper">
-             <div class="swiper-slide"><img src="./asset/img/main_banner.jpg"></div>
-             <div class="swiper-slide"><img src="./asset/img/main_banner2.jpg"></div>
-             <div class="swiper-slide"><img src="./asset/img/main_banner3.jpg"></div>
+             <div class="swiper-slide"><img src="./asset/img/main_banner.jpg" alt="main_banner1"></div>
+             <div class="swiper-slide"><img src="./asset/img/main_banner2.jpg" alt="main_banner2"></div>
+             <div class="swiper-slide"><img src="./asset/img/main_banner3.jpg" alt="main_banner3"></div>
            </div>
            <div class="swiper-button-next"></div>
            <div class="swiper-button-prev"></div>
@@ -183,7 +183,7 @@
                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet,
                consectetur adipisicing elit
              </p>
-             <form action="">
+             <form name="search_form">
                <input type="search" name="search">
                <input type="submit" value="search">
              </form>
@@ -202,7 +202,7 @@
      </div>
    </footer>
  </div>
- <script type="text/javascript" src="./js/swiper-bundle.js"></script>
+ <script src="./js/swiper-bundle.js"></script>
  <script>
    var swiper = new Swiper(".mySwiper", {
      spaceBetween: 30,
